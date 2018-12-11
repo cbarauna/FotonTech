@@ -1,0 +1,11 @@
+Action
+{
+    type: 'FETCH_BOOKS',
+    payload: books
+}
+
+switch(action.type){
+    case FETCH_BOOKS:
+    return {books: action.payload}
+}
+this.props.books
